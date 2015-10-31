@@ -1,20 +1,15 @@
 
 body {
-    width: 1200px;
     margin: 0;
     padding: 0;
     font-family: 'PT Sans Narrow', sans-serif;
-    font-size: 14px;
-    line-height: 24px;
     font-weight: bold;
-    color: #000000;
 }
 
 h1 {
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 30px;
     font-weight: bold;
-
 }
 
 h2 {
@@ -28,7 +23,7 @@ h2 {
 
 .main-header {
     background-color: #c5e5ff;
-    margin-bottom: 40px;
+    margin-bottom: 55px;
 }
  
 .container {
@@ -81,13 +76,13 @@ h2 {
 
 .inner-page-title {
     background-color: #d2e3ca;
-    margin-bottom: 40px;
-
+    margin-bottom: 60px;
 }
 
 .inner-page-title h1 {
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin: 0px;
+    margin-bottom: 30px;
 }
 
 .breadcrumbs ul {
@@ -109,9 +104,10 @@ h2 {
 }
 
 .filter-block {
-    width: 240px;
+    width: 230px;
     float: left;
     margin-right: 10px;
+    min-height: 600px;
     text-transform: uppercase;
     background-color: #dacfdc;
 }
@@ -121,6 +117,14 @@ h2 {
     font-size:  24px;
 }
 
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=radio] {
+    display: none;
+}
+
 label {
     display: block;
     padding-bottom: 20px;
@@ -128,7 +132,9 @@ label {
 
 .catalog-container {
     width: 700px;
-    float: right;
+    float: left;
+    min-height: 730px;
+    font-size: 0px;
     background-color: #dacfff;
 }
 
@@ -136,30 +142,50 @@ label {
     width: 220px;
     height: 280px;
     display: inline-block;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
     margin-right: 20px;
-}
-
-.catalog-item:nth-child(3) {
-    margin-right: 0;
-
-}
-.item-description span {
-    text-transform:  uppercase;
-}
-
-
-
-
-
-
-
-
-
- .main-footer {
-   padding: 20px 0;
- }
  
- .footer-contacts {
+}
+
+.catalog-item:nth-child(3n){
+    margin-right: 0;
+}
+
+.item-image img {
+    margin-bottom:  15px;
+}
+
+.item-description {
+    min-height: 50px;
+  
+    text-decoration: none;
+    text-transform:  uppercase;
+
+}
+
+.item-price{
+    min-height: 40px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-transform:  uppercase;
+    vertical-align: middle;
+}
+.pagination ul {
+    font-size: 0px;
+    margin-bottom: 55px;
+    margin-top: 55px;
+}
+.pagination li{
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 15px;
+
+}
+
+.footer-contacts {
+    margin-top: 20px;
    float: left;
    width: 380px;
    margin-right: 20px;
